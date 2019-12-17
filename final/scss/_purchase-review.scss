@@ -1,0 +1,41 @@
+.prch-review-page{
+    .row-2{
+        padding-top: 20px;
+    }
+    .date-adv{
+        label{
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        span{
+            padding: 10px;
+        }
+        select{
+            width: 120px;
+            margin: 0 25px 0 15px;
+            option{
+                text-align: center;
+            }
+        }
+        input[type=date]{
+            width: 152px;
+        }
+    }
+    .excel-table{
+        height: 60vh;
+        
+
+        .grid-slno,.grid-id,.grid-qnt{
+            width: 66px;;
+        }
+        .grid-hsn{
+            width: 115px;
+        }
+        .grid-name,.grid-cat,.grid-man{
+            width: 210px;
+        }
+    }
+    .dte-bet{
+        display: none;
+    }
+}

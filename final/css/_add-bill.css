@@ -1,0 +1,18 @@
+.add-bill-page .head .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .add-bill-page .head .inputs label {
+    width: 160px; }
+
+.add-bill-page .head .row-2 {
+  padding-top: 20px; }
+
+.add-bill-page .excel-table {
+  height: 60vh; }
+  .add-bill-page .excel-table .grid-slno, .add-bill-page .excel-table .grid-id, .add-bill-page .excel-table .grid-qnt {
+    width: 66px; }
+  .add-bill-page .excel-table .grid-hsn {
+    width: 115px; }
+  .add-bill-page .excel-table .grid-name, .add-bill-page .excel-table .grid-cat, .add-bill-page .excel-table .grid-man {
+    width: 210px; }

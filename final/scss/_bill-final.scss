@@ -1,0 +1,109 @@
+.bill-final-page{
+    background: #f7f5f5;
+    /* A4 Size */
+    height: 1122.519685px;
+    width: 793.700787px;
+    padding: 50px 10px;
+    margin: auto;
+    h4{
+        font-weight: 800;
+    }
+    h6{
+        font-weight: 600;
+    }
+
+    .date{
+    padding-right: 172px;
+    }
+    .addr{
+        .main{
+            padding: 10px 0 19px 0;
+            h6{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .head{
+        border-radius: 10px;
+        border: 1px solid #000;
+        p{
+            font-weight: 500;
+        }
+    }
+
+    .excel-table{
+        font-size: 15px;
+        background-color: #EAEDED;
+        border: 1px solid black;
+        empty-cells: show;
+        table-layout: fixed;
+        
+        tr {
+            td,th{
+                border: none;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            td {
+                padding: 5px 3px;  
+                text-align: center  ;
+                font-weight: 600;
+            }
+            th {
+                text-align: center;
+                background: rgba(179, 183, 187, 0.897);
+                vertical-align: middle;
+                border: 1px solid black;
+            }
+            &:nth-child(odd) {
+                input {
+                    background-color: #D6DBDF;
+                }
+            }
+            &.footer-row{
+                td{
+                    border-top: 1px solid black;
+                    padding: 10px;
+                    font-weight: 700;
+                    height: 10px;
+                }
+            }
+        }
+
+        .g{
+            padding: 10px;
+        }
+        .grid-slNo{
+            width: 30px;
+        }
+        .grid-item{
+            width: 120px;
+        }
+        .grid-hsn,.grid-net,.grid-qty{
+            width: 50px;
+        }
+        .grid-gst-per,.grid-gst-amnt,.grid-MRP,.grid-disc,.grid-price,.grid-net,.grid-tot{
+            width: 80px;
+        }
+        
+        
+    }
+
+    .bill-footer{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            padding-top: 60px;;
+        }
+        .pages{
+            p{
+                font-size: 12px;
+                font-weight: 700;
+                padding-top: 100px;
+            }
+        }
+    }
+
+}

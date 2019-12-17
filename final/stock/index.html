@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Stock</title>
+</head>
+
+<body>
+    <main class="stock-page">
+        <section class="stocks">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="head">
+                            <div class="row">
+                                <div class="col-md-3 h-30 d-flex offset-md-1">
+
+                                    <input class="search-inputs" type="number" id="bill-id" placeholder="BillId"
+                                        autocomplete='off'>
+                                    <button class="btn btn-primary" onClick="billSearch()">Search</button>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h1 class="text-center">
+                                        Stock
+                                    </h1>
+                                </div>
+
+                                <div class="col-md-3 h-30 d-flex">
+
+                                    <input class="search-inputs" type="text" id="vendor" placeholder="Vendor Name"
+                                        autocomplete='off'>
+                                    <button class="btn btn-primary" onClick="venSearch()">Search</button>
+
+                                </div>
+                                <a href="http://localhost/final/" class="btn-home"><span><i class="fas fa-home"></i></span></a>
+                            </div>
+                        </div>
+                        <div class="search-stocks">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="inputs">
+                                        <input class="search-inputs" type="number" id="stock-id" placeholder="ID"
+                                            autocomplete='off'>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+
+                                    <div class="inputs">
+                                        <input class="search-inputs" type="text" id="stock-name" placeholder="Name"
+                                            autocomplete='off'>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+
+                                    <div class="inputs">
+                                        <input class="search-inputs" type="text" id="stock-manuf" placeholder="Manufacture"
+                                            autocomplete='off'>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+
+                                    <div class="inputs">
+                                        <input class="search-inputs" type="text" id="stock-categ" placeholder="Category"
+                                            autocomplete='off'>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="inputs">
+                                        <button class="btn btn-primary" onclick="searchItems()">SEARCH</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-wrapper">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="container-fluid p-0">
+                                        <table class="table table-striped table-bordered table-responsive excel-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th class='grid-slno' scope="col">Sl.No</th>
+                                                    <th class='grid-id' scope="col">Id</th>
+                                                    <th class='grid-name' scope="col">Name</th>
+                                                    <th class='grid-man' scope="col">Manufacture</th>
+                                                    <th class='grid-cat' scope="col">Category</th>
+                                                    <th class='grid-qnt' scope="col">QNT</th>
+                                                    <th class='grid-qnt' scope="col">Sold</th>
+                                                    <th class='grid-price' scope="col">Taxable</th>
+                                                    <th class='grid-hsn' scope="col">HSN Code</th>
+                                                    <th class='grid-igstp' scope="col">IGST%</th>
+                                                    <th class='grid-sgstp' scope="col">SGST%</th>
+                                                    <th class='grid-cgstp' scope="col">CGST%</th>
+                                                    <th class='grid-igst' scope="col">IGST</th>
+                                                    <th class='grid-sgst' scope="col">SGST</th>
+                                                    <th class='grid-cgst' scope="col">CGST</th>
+                                                    <th class='grid-total' scope="col">Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="grid-data">
+                                                <!--SAMPLE DATA
+                                                    <tr>
+                                                        <td class="grid-slno"><input type="text"></td>
+                                                        <td class="grid-id"><input type="text"></td>
+                                                        <td class="grid-name"><input type="text"></td>
+                                                        <td class="grid-cat"><input type="text"></td>
+                                                        <td class="grid-man"><input type="text"></td>
+                                                        <td class="grid-price"><input type="text"></td>
+                                                        <td class="grid-hsn"><input type="text"></td>
+                                                        <td class="grid-igst"><input type="text"></td>
+                                                        <td class="grid-sgst"><input type="text"></td>
+                                                        <td class="grid-cgst"><input type="text"></td>
+                                                        <td class="grid-hsn"><input type="text"></td>
+                                                        <td class="grid-igst"><input type="text"></td>
+                                                        <td class="grid-sgst"><input type="text"></td>
+                                                        <td class="grid-cgst"><input type="text"></td>
+                                                    </tr>             
+                                                -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+
+                                    <div class="btn-grp">
+                                        <button class="btn btn-danger" onClick="showFixPrice()">
+                                            Fix-price
+                                        </button>
+                                        <button class="btn btn-danger ml-auto" onclick="showEmptyStock()">
+                                            Empty Stocks
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

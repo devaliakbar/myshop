@@ -1,0 +1,29 @@
+.add-bill-page{
+
+    .head{
+
+        .inputs{
+            display: flex;
+            label{
+                width: 180px;
+            }
+        }
+        .row-2{
+            padding-top: 20px;
+        }
+    }
+    .excel-table{
+        height: 60vh;
+        
+
+        .grid-slno,.grid-id,.grid-qnt{
+            width: 66px;;
+        }
+        .grid-hsn{
+            width: 115px;
+        }
+        .grid-name,.grid-cat,.grid-man{
+            width: 210px;
+        }
+    }
+}

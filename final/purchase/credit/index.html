@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Purchase Credit</title>
+</head>
+
+<body>
+
+    <main class="purchase-credit-page">
+            <section class="head">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">Purchase Credit</h1>
+                                <a href="http://localhost/final/" class="btn-home"><span><i class="fas fa-home"></i></span></a>
+                            </div>
+        
+                            <div class="col-md-3">
+                                <div class="inputs">
+                                    <input type="number" id="id" placeholder="Id" autocomplete='off'>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+        
+                                <div class="inputs">
+                                    <input type="text" id="name" placeholder="Name" autocomplete='off'>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+        
+                                <div class="inputs">
+                                    <input class="search-inputs" type="text" id="phone" placeholder="Phone" autocomplete='off'>
+                                </div>
+                            </div>
+                            <div class="col-md-2 offset-md-1">
+        
+                               <button class="btn-primary" onclick="refresh()">Refresh</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="table-items">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="wrapper">
+        
+                                    <table class="table table-striped table-bordered table-responsive excel-table">
+                                        <thead class="w-100">
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th class='grid-slno' scope="col">Sl.No</th>
+                                                <th class='grid-id' scope="col">VendorId</th>
+                                                <th class='grid-name' scope="col">Name</th>
+                                                <th class='grid-phone' scope="col">Phone</th>
+                                                <th class='grid-addr' scope="col">Address</th>
+                                                <th class='grid-amt' scope="col">Amount</th>
+                                                <th class='grid-return' scope="col">Return</th>
+                                                <th class='grid-tot' scope="col">Total</th>
+                                                <th class='grid-pay' scope="col">Pay</th>
+                                                <th class='grid-bal' scope="col">Balance</th>
+                                            </tr>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="grid-data">
+                                            <tr>
+                                                <td>ALI</td>
+                                                <td>ALI </td>
+                                                <td>ALI </td>
+                                                <td>ALI </td>
+                                                <td>ALI </td>
+                                                <td>AL</td>
+                                                <td>ALI </td>
+                                                <td>AL</td>
+                                                <td>A</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/fontawesome.min.js"></script>
+    <script src="../../js/custom.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
